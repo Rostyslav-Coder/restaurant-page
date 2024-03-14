@@ -1,14 +1,22 @@
 // ========== HEADER COMPONENT MODULE ========== //
 
 import PropTupes from 'prop-types';
+import moonImage from '../assets/images/restaurant-logo.webp';
+import '../styles/Header.css';
+
 
 const Header = ({ setPage }) => {
 	return (
-		<header>
-			<h1>Hi I`m Header</h1>
-			<nav>
-				<button onClick={() => setPage('Home')}>Home</button>
-				<button onClick={() => setPage('Menu')}>Menu</button>
+		<header className='header' id='header'>
+			<h1 className='header__logoText'>
+				M<img className='header__logoImage' src={moonImage} alt='moon icon' />ONPIZZA
+			</h1>
+			<nav className='header__navBar'>
+				<button className='header__navButton' onClick={() => setPage('Home')}>Home</button>
+				<button className='header__navButton' onClick={() => setPage('Menu')}>Menu</button>
+				<button className='header__navButton' onClick={() => setPage('Delivery')}>Delivery</button>
+				<button className='header__navButton' onClick={() => setPage('Contact')}>Contact</button>
+				<button className='header__navButton' onClick={() => setPage('About')}>About</button>
 			</nav>
 		</header>
 	);

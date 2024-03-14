@@ -1,0 +1,52 @@
+/* ========== HEADER STYLE MODULE ========== */
+
+.header {
+	width: 100%;
+	height: 10vh;
+	position: absolute;
+	top: 0;
+	background:
+		linear-gradient(var(--dark-magenta, #770646) 85%,
+			var(--middle-violet-red, #C20081) 90%,
+			var(--magenta, #FF00F2) 95%);
+	padding: 0 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logoText {
+	color: var(--white, #F0F0F0);
+	font-family: 'Rubik Maze', system-ui, Roboto, 'Open Sans', sans-serif;
+	font-size: 3.5rem;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+
+.header__logoImage {
+	width: 3rem;
+}
+
+.header__navBar {
+	min-width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__navButton {
+	color: var(--white, #F0F0F0);
+	width: 7rem;
+	height: 2.5rem;
+	background:
+		linear-gradient(var(--dark-magenta, #770646) 85%,
+			var(--middle-violet-red, #C20081) 90%,
+			var(--magenta, #FF00F2) 95%);
+	border: 0.2rem double var(--black);
+	border-radius: 0.625rem;
+	font-family: 'Orbitron', serif;
+	font-weight: 900;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+}

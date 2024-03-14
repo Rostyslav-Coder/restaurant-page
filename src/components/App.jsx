@@ -1,6 +1,6 @@
 // ========== APP COMPONENT MODULE ========== //
 
-import { useRoutes } from 'react-router-dom';
+import { useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './Header';
 import Home from './Home';
@@ -9,19 +9,27 @@ import Footer from './Footer';
 
 
 const App = () => {
-	const routes = useRoutes([
-		{ path: '/', element: <Home /> },
-		{ path: '/menu', element: <Menu /> },
-	]);
+	const [page, setPage] = useState('Home');
+
+	const renderPage = () => {
+		switch (page) {
+			case 'Home':
+				return <Home />;
+			case 'Menu':
+				return <Menu />;
+			default:
+				return <Home />;
+		}
+	};
 
 	return (
-		<ParallaxProvider>
-			<div className="aplication">
-				<Header />
-				{routes}
-				<Footer />
-			</div>
-		</ParallaxProvider>
+		<>
+			<Header setPage={setPage} />
+			<ParallaxProvider className='aplication'>
+				{renderPage()}
+			</ParallaxProvider>
+			<Footer />
+		</>
 	);
 };
 

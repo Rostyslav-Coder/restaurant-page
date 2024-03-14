@@ -1,14 +1,20 @@
 // ========== HEADER COMPONENT MODULE ========== //
 
-import { Link } from 'react-router-dom';
+import PropTupes from 'prop-types';
 
-const Header = () => {
-	return <header>
-		<nav>
-			<Link to='/'>Home</Link>
-			<Link to='/menu'>Menu</Link>
-		</nav>
-	</header>
+const Header = ({ setPage }) => {
+	return (
+		<header>
+			<h1>Hi I`m Header</h1>
+			<nav>
+				<button onClick={() => setPage('Home')}>Home</button>
+				<button onClick={() => setPage('Menu')}>Menu</button>
+			</nav>
+		</header>
+	);
 };
 
+Header.propTypes = {
+	setPage: PropTupes.func.isRequired,
+}
 export default Header;

@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-	"homepage": "https://Rostyslav-Coder.github.io/restaurant-page/",
+  "homepage": "https://Rostyslav-Coder.github.io/restaurant-page/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
@@ -17,7 +17,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.215",
-    "react-router-dom": "^6.22.3",
     "react-scroll-parallax": "^3.4.5",
     "uuid": "^9.0.1"
   },

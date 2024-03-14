@@ -1,0 +1,11 @@
+/* ========== APP STYLE MODULE ========== */
+
+.application {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+.application__wrapper {
+	padding: 10vh 10%;
+}

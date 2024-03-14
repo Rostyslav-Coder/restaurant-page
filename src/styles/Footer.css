@@ -1,0 +1,26 @@
+/* ========== FOOTER STYLE MODULE ========== */
+
+.footer {
+	width: 100%;
+	padding: 0.5rem 5%;
+	position: absolute;
+	bottom: 0;
+	background:
+		linear-gradient(var(--magenta, #770646) 3%,
+			var(--middle-violet-red, #C20081) 6% 10%,
+			var(--dark-magenta, #770646) 13% 100%);
+	text-align: center;
+}
+
+.footer__text,
+.footer__link {
+	color: var(--white, #F0F0F0);
+	font-size: 0.8rem;
+	font-family: 'Orbitron';
+}
+
+.footer__link,
+.footer__link:visited {
+	text-decoration: none;
+	font-weight: 700;
+}

@@ -8,7 +8,7 @@ import './main.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<Router basename='/restaurant-page'>
+		<Router basename='/'>
 			<App />
 		</Router>
 	</React.StrictMode>,

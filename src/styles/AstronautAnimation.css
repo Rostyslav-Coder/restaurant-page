@@ -1,0 +1,19 @@
+/* ========== ASTRONAUT ANIMATION MODULE ========== */
+
+@keyframes astronaut {
+	0% {
+		transform: translateX(0) translateY(0) rotate(0) scale(1);
+	}
+
+	25% {
+		transform: translateX(-20px) translateY(-30px) rotate(-4deg) scale(1.03);
+	}
+
+	50% {
+		transform: translateX(0) translateY(0) rotate(0) scale(1);
+	}
+
+	75% {
+		transform: translateX(40px) translateY(-40px) rotate(9deg) scale(1.02);
+	}
+}

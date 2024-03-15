@@ -1,0 +1,49 @@
+/* ========== ABOUT STYLE MODULE ========== */
+
+.aboutPage {
+	min-height: 100vh;
+	background-image: url('../assets/images/about/space-bg.jpg');
+	background-size: cover;
+	padding: 3rem 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutPage__card {
+	background:
+		linear-gradient(var(--dark-magenta) 97%,
+			var(--middle-violet-red) 98%,
+			var(--magenta) 99%);
+	width: 100%;
+	padding: 2rem;
+	border: 4px double var(--black);
+	border-radius: 1.5rem;
+}
+
+.aboutPage__title {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 3rem;
+	color: var(--white);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.aboutPage__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.aboutPage__text {
+	width: 55%;
+	font-size: 1.2rem;
+	color: var(--white);
+	text-align: justify;
+}
+
+.aboutPage__image {
+	width: 43%;
+	border: 4px double var(--black);
+	border-radius: 1rem;
+}

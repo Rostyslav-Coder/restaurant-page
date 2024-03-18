@@ -1,0 +1,73 @@
+/* ========== MENU STYLE MODULE ========== */
+
+.menuPage {
+	width: 100%;
+	background-image: url('../assets/images/about/space-bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 3rem 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menuPage__title {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 3rem;
+	color: var(--white);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.menuCard {
+	transform: perspective(800px);
+	transform-style: preserve-3d;
+	width: 70%;
+	margin: 1rem auto;
+	border: 2px solid #FFF;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(../assets/images/menu/menu_bg.jpg);
+	background-size: 90% 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: border 2s;
+}
+
+.menuCard:hover {
+	border: 2px solid #03ffb8;
+}
+
+.menuCard__title {
+	padding: 5% 0 3%;
+	text-align: center;
+	transition: color 2s;
+}
+
+.menuCard:hover .menuCard__title {
+	color: #03ffb8;
+}
+
+.menuCard__image {
+	width: 25%;
+	transition: 1s;
+}
+
+.menuCard:hover .menuCard__image {
+	transform: translateZ(50px) rotate(720deg) scale(2.2);
+}
+
+.menuCard__text {
+	width: 80%;
+	text-align: justify;
+	padding: 3% 0 5%;
+	transition: color 2s;
+}
+
+.menuCard:hover .menuCard__text {
+	color: #03ffb8;
+}

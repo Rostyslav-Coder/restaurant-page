@@ -5,14 +5,13 @@
 	height: 10vh;
 	position: absolute;
 	top: 0;
-	background:
-		linear-gradient(var(--dark-magenta, #770646) 85%,
-			var(--middle-violet-red, #C20081) 90%,
-			var(--magenta, #FF00F2) 95%);
+	background-color: #24242424;
 	padding: 0 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	backdrop-filter: blur(6px);
+	z-index: 1000;
 }
 
 .header__logoText {
@@ -22,6 +21,7 @@
 	line-height: 1;
 	display: flex;
 	align-items: center;
+	cursor: default;
 }
 
 .header__logoImage {
@@ -39,14 +39,12 @@
 	color: var(--white, #F0F0F0);
 	width: 7rem;
 	height: 2.5rem;
-	background:
-		linear-gradient(var(--dark-magenta, #770646) 85%,
-			var(--middle-violet-red, #C20081) 90%,
-			var(--magenta, #FF00F2) 95%);
-	border: 0.2rem double var(--black);
+	background-color: #24242424;
+	border: 0.1rem solid #f0f0f0;
 	border-radius: 0.625rem;
 	font-family: 'Orbitron', serif;
 	font-weight: 900;
 	font-size: 1rem;
 	letter-spacing: 0.1rem;
+	cursor: pointer;
 }

@@ -5,15 +5,14 @@
 	padding: 0.5rem 5%;
 	position: absolute;
 	bottom: 0;
-	background-color: #24242424;
+	background-color: #242424;
 	text-align: center;
-	backdrop-filter: blur(6px);
 	z-index: 1000;
 }
 
 .footer__text,
 .footer__link {
-	color: #000;
+	color: #09C4BD;
 	font-size: 0.8rem;
 	font-family: 'Orbitron';
 }

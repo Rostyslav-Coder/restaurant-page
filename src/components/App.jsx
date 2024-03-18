@@ -35,10 +35,8 @@ const App = () => {
 	return (
 		<div className='application'>
 			<Header setPage={setPage} />
-			<ParallaxProvider>
-				<div className='application__wrapper'>
-					{renderPage()}
-				</div>
+			<ParallaxProvider className='application__wrapper'>
+				{renderPage()}
 			</ParallaxProvider>
 			<Footer />
 		</div>

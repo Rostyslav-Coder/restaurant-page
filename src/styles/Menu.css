@@ -15,7 +15,6 @@
 .menuPage__title {
 	font-family: 'Orbitron', sans-serif;
 	font-size: 3rem;
-	color: var(--white);
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -25,7 +24,7 @@
 	transform-style: preserve-3d;
 	width: 60%;
 	margin: 1rem auto;
-	border: 2px solid #FFF;
+	border: 2px solid var(--white, #F0F0F0);
 	border-radius: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -39,7 +38,7 @@
 }
 
 .menuCard:hover {
-	border: 2px solid #09C4BD;
+	border: 2px solid var(--telescopic, #09C4BD);
 }
 
 .menuCard__title {
@@ -49,7 +48,7 @@
 }
 
 .menuCard:hover .menuCard__title {
-	color: #09C4BD;
+	color: var(--telescopic, #09C4BD);
 }
 
 .menuCard__image {
@@ -69,5 +68,5 @@
 }
 
 .menuCard:hover .menuCard__text {
-	color: #09C4BD;
+	color: var(--telescopic, #09C4BD);
 }

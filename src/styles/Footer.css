@@ -12,9 +12,11 @@
 
 .footer__text,
 .footer__link {
-	color: #CDCDCD;
 	font-size: 0.8rem;
-	font-family: 'Orbitron';
+}
+
+.footer__link {
+	color: var(--white, #F0F0F0);
 }
 
 .footer__link,

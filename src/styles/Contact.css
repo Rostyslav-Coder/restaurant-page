@@ -18,18 +18,16 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 95% 90%;
-	border: 1px solid #CDCDCD;
+	border: 1px solid var(--white, #F0F0F0);
 	border-radius: 1.5rem;
 	transition: 1s;
 }
 
 .contactPage__card:hover {
-	border: 1px solid #09C4BD;
+	border: 1px solid var(--telescopic);
 }
 
 .contactPage__title {
-	color: #CDCDCD;
-	font-family: 'Orbitron', sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -37,7 +35,6 @@
 }
 
 .contactPage__text {
-	color: #CDCDCD;
 	font-size: 1.2rem;
 	text-align: justify;
 	transition: 1s;
@@ -52,5 +49,5 @@
 
 .contactPage__card:hover .contactPage__title,
 .contactPage__card:hover .contactPage__text {
-	color: #09C4BD;
+	color: var(--telescopic, #09C4BD);
 }

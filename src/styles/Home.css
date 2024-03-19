@@ -33,11 +33,7 @@
 	height: 100%;
 	border-radius: 50%;
 	background-image:
-		radial-gradient(circle at top right,
-			#ffffff22 0 25%,
-			#000000BB 50% 65%,
-			#000000EE 70% 80%,
-			#58abff 95% 100%);
+		radial-gradient(var(--rad-gradient));
 	z-index: 2;
 }
 

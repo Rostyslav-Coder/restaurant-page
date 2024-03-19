@@ -5,17 +5,22 @@
 
 :root {
 	--black: #212121;
+	--telescopic: #09C4BD;
 	--white: #F0F0F0;
-	--dark-magenta: #770646;
-	--middle-violet-red: #C20081;
-	--magenta: #FF00F2;
+	--bg-color: #242424;
+	--footer-bg: #24242424;
+	--rad-gradient: circle at top right,
+		#ffffff22 0 25%,
+		#000000BB 50% 65%,
+		#000000EE 70% 80%,
+		#58abff 95% 100%;
 
 	font-family: Orbitron, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
-	color: rgba(255, 255, 255, 0.87);
-	/* background-color: #242424; */
+	color: var(--white, #F0F0F0);
+	background-color: var(--bg-color, #242424);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

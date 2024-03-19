@@ -18,18 +18,16 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 95% 90%;
-	border: 1px solid #CDCDCD;
+	border: 1px solid var(--white, #F0F0F0);
 	border-radius: 1.5rem;
 	transition: 1s;
 }
 
 .aboutPage__card:hover {
-	border: 1px solid #09C4BD;
+	border: 1px solid var(--telescopic, #09C4BD);
 }
 
 .aboutPage__title {
-	color: #CDCDCD;
-	font-family: 'Orbitron', sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -43,7 +41,6 @@
 }
 
 .aboutPage__text {
-	color: #CDCDCD;
 	width: 55%;
 	font-size: 1.2rem;
 	text-align: justify;
@@ -57,5 +54,5 @@
 
 .aboutPage__card:hover .aboutPage__title,
 .aboutPage__card:hover .aboutPage__text {
-	color: #09C4BD;
+	color: var(--telescopic, #09C4BD);
 }

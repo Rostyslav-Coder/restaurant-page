@@ -9,42 +9,14 @@
 	min-height: 200vh;
 }
 
-/* Space background layer */
-.homePage__layer1 {
+.homePage__sky {
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	z-index: 0;
 }
 
-/* Moon Landskape background layer */
-.homePage__layer2 {
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	z-index: 4;
-}
-
-/* Title layer */
-.homePage__layerText {
-	width: 80%;
-	margin-top: 25%;
-	color: var(--dark-magenta, #770646);
-	font-family: 'Rubik Maze';
-	font-size: 3.5rem;
-	text-transform: uppercase;
-	text-wrap: balance;
-	text-align: left;
-	z-index: 3;
-}
-
-.homePage__layerText span {
-	color: var(--magenta, #FF00F2);
-	font-size: 7.5rem;
-}
-
-/* Earth planet background layer */
-.homePage__layerEarth {
+.homePage__planet {
 	width: 45%;
 	position: relative;
 	aspect-ratio: 1/1;
@@ -53,7 +25,7 @@
 	z-index: 1;
 }
 
-.homePage__layerEarthShadow {
+.homePage__planetShadow {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -63,36 +35,47 @@
 	background-image:
 		radial-gradient(circle at top right,
 			#ffffff22 0 25%,
-			#000000BB 50% 70%,
-			#000000EE 80% 100%);
+			#000000BB 50% 65%,
+			#000000EE 70% 80%,
+			#58abff 95% 100%);
 	z-index: 2;
 }
 
-.homePage__layerEarthImage {
+.homePage__planetImage {
 	width: 100%;
 	animation: 180s infinite rotate;
 }
 
-.homePage__moonStation {
-	position: absolute;
-	bottom: 18%;
-	left: 35%;
-	width: 30%;
-	z-index: 5;
+.homePage__title {
+	width: 80%;
+	margin-top: 30%;
+	color: #CDCDCD;
+	font-family: 'Rubik Maze';
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	text-wrap: balance;
+	text-align: left;
+	z-index: 3;
 }
 
-.homePage__moonStation>img,
-.homePage__moonStation>p {
-	width: 100%;
+.homePage__title span {
+	color: #FFFFFF;
+	font-size: 7.5rem;
+}
+
+.homePage__landscape {
+	background-position: bottom 50vh center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	z-index: 4;
 }
 
 .homePage__pizzaMan1 {
-	color: #000;
 	position: absolute;
 	bottom: 3%;
 	left: 10%;
-	width: 14%;
-	aspect-ratio: 1/2;
+	width: 12%;
+	aspect-ratio: 1/2.5;
 	animation: 6s ease-in 0s infinite astronaut;
 	z-index: 7;
 }
@@ -102,7 +85,7 @@
 	height: 100%;
 	transform-style: preserve-3d;
 	transform: perspective(500px);
-	background-image: url('../assets/images/home/pizza-man-1.webp');
+	background-image: url('../assets/images/home/pizza-man1.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: flex;
@@ -112,24 +95,18 @@
 
 .homePage__pizzaMan1 img {
 	transform: translateZ(30px) scale(0.8);
-	width: 100%;
-	margin-left: 25%;
+	width: 120%;
+	margin-right: 35%;
 }
 
 .homePage__pizzaMan2 {
-	color: #000;
 	position: absolute;
-	bottom: 7%;
-	right: 15%;
-	width: 9%;
-	aspect-ratio: 1/2;
-	animation: 5s ease-in 2s infinite astronaut;
+	bottom: 8%;
+	right: 10%;
+	width: 17%;
+	aspect-ratio: 1/1;
+	animation: 7s ease-in 3s infinite astronaut;
 	z-index: 6;
-}
-
-.homePage__pizzaMan2 img {
-	transform: translateZ(30px) scale(0.8);
-	width: 120%;
 }
 
 .parallax__pizzaMan2 {
@@ -137,7 +114,7 @@
 	height: 100%;
 	transform-style: preserve-3d;
 	transform: perspective(500px);
-	background-image: url('../assets/images/home/pizza-man-2.webp');
+	background-image: url('../assets/images/home/pizza-man2.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: flex;
@@ -145,50 +122,37 @@
 	align-items: center;
 }
 
-.pizzaMan__textTop,
-.pizzaMan__textBottom {
-	color: var(--dark-magenta);
-	position: relative;
-	width: 200%;
-	background: var(--white);
-	font-size: 1.2rem;
-	text-align: justify;
-	border: 1px solid var(--black);
-	border-radius: 1rem;
-	padding: 0.5rem 1rem;
+.homePage__pizzaMan2 img {
+	transform: translateZ(30px);
+	width: 60%;
+	margin-top: 20%;
 }
 
-.pizzaMan__textBottom {
-	opacity: 0;
-	transition: 1s;
-}
-
-.homePage__pizzaMan1:hover .pizzaMan__textBottom,
-.homePage__pizzaMan2:hover .pizzaMan__textBottom,
-.homePage__moonStation:hover .pizzaMan__textBottom {
-	opacity: 1;
-}
-
-.pizzaMan__textTop::after {
-	content: "";
+.homePage__pizzaMan3 {
 	position: absolute;
-	bottom: -10px;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid var(--white);
+	bottom: 7%;
+	left: 40%;
+	width: 15%;
+	aspect-ratio: 1/1;
+	animation: 9s ease-in 2s infinite astronaut;
+	z-index: 6;
 }
 
-.pizzaMan__textBottom::after {
-	content: "";
-	position: absolute;
-	top: -10px;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid var(--white);
+.parallax__pizzaMan3 {
+	width: 80%;
+	height: 110%;
+	transform-style: preserve-3d;
+	transform: perspective(500px);
+	background-image: url('../assets/images/home/pizza-man3.webp');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homePage__pizzaMan3 img {
+	transform: translateZ(30px);
+	width: 60%;
+	margin: 0 80% 100% 0;
 }

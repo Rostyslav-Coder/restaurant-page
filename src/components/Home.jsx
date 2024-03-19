@@ -3,8 +3,8 @@
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import Tilt from 'react-parallax-tilt';
 import spaceBg from '../assets/images/home/space-bg.jpg';
-import landscapeBg from '../assets/images/home/landscape-bg.webp';
 import planetBg from '../assets/images/home/planet-bg.webp';
+import landscapeBg from '../assets/images/home/landscape-bg.webp';
 import pizza from '../assets/images/home/pizza1.webp';
 import pizzaBox from '../assets/images/home/pizza-box.webp';
 import burger from '../assets/images/menu/alienObserverBurgerImg.webp'
@@ -15,21 +15,21 @@ import '../styles/RotateAnimation.css';
 
 const Home = () => {
 	return (
-		<section className='homePage'>
+		<section className='homePage' id='home'>
 			<ParallaxBanner className='homePage__banner'>
 
 				<ParallaxBannerLayer className='homePage__sky' image={spaceBg} speed={-10} />
 
 				<ParallaxBannerLayer className='homePage__planet' speed={-30}>
 					<div className='homePage__planetShadow'></div>
-					<img className='homePage__planetImage' src={planetBg} alt='Earth the Planet' />
+					<img className='homePage__planetImage' src={planetBg} alt='Planet image' />
 				</ParallaxBannerLayer>
 
 				<ParallaxBannerLayer className='homePage__title' speed={100} scale={[1, 0.1]} opacity={[1, 0]}>
-					<h1>There is only one <span>real Pizzeria</span> on the Space</h1>
+					<h1>There is only one<br /><span>real Pizzeria</span><br />on the Space</h1>
 				</ParallaxBannerLayer>
 
-				<ParallaxBannerLayer className='homePage__landscape' image={landscapeBg} speed={40} />
+				<ParallaxBannerLayer className='homePage__landscape' image={landscapeBg} speed={36} />
 
 				<div className='homePage__pizzaMan1'>
 					{/* <p className='pizzaMan__textTop'>We make the most delicious pizza on the entire moon.</p> */}

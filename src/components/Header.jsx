@@ -9,7 +9,7 @@ const Header = ({ setPage }) => {
 	return (
 		<header className='header' id='header'>
 			<h1 className='header__logoText'>
-				M<img className='header__logoImage' src={moonImage} alt='moon icon' />ONPIZZA
+				C<img className='header__logoImage' src={moonImage} alt='moon icon' />SMOPIZZA
 			</h1>
 			<nav className='header__navBar'>
 				<button className='header__navButton' onClick={() => setPage('Home')}>Home</button>

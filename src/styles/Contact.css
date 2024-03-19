@@ -1,0 +1,56 @@
+/* ========== CONTACT STYLE MODULE ========== */
+
+.contactPage {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url('../assets/images/about/space-bg.jpg');
+	background-size: cover;
+	padding: 5rem 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactPage__card {
+	width: 100%;
+	padding: 5%;
+	background-image: url('../assets/images/menu/menu_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 95% 90%;
+	border: 1px solid #CDCDCD;
+	border-radius: 1.5rem;
+	transition: 1s;
+}
+
+.contactPage__card:hover {
+	border: 1px solid #09C4BD;
+}
+
+.contactPage__title {
+	color: #CDCDCD;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+.contactPage__text {
+	color: #CDCDCD;
+	font-size: 1.2rem;
+	text-align: justify;
+	transition: 1s;
+	margin-bottom: 1rem;
+}
+
+.contactPage__title span,
+.contactPage__text span {
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.contactPage__card:hover .contactPage__title,
+.contactPage__card:hover .contactPage__text {
+	color: #09C4BD;
+}

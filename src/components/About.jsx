@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<section className='aboutPage'>
 			<div className='aboutPage__card'>
-				<h1 className='aboutPage__title'>About</h1>
+				<h1 className='aboutPage__title'>ABOUT</h1>
 				<div className='aboutPage__wrapper'>
 					<p className='aboutPage__text'>
 						In a distant galaxy, at the crossroads of cosmic pathways, a team of

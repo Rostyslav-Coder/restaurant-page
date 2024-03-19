@@ -2,7 +2,7 @@
 
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import Tilt from 'react-parallax-tilt';
-import spaceBg from '../assets/images/home/space-bg.jpg';
+import spaceBg from '../assets/images/home/sky-bg.webp';
 import planetBg from '../assets/images/home/planet-bg.webp';
 import landscapeBg from '../assets/images/home/landscape-bg.webp';
 import pizzaBox from '../assets/images/home/pizza-box.webp';

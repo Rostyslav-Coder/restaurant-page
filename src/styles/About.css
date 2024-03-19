@@ -1,32 +1,39 @@
 /* ========== ABOUT STYLE MODULE ========== */
 
 .aboutPage {
+	width: 100%;
 	min-height: 100vh;
 	background-image: url('../assets/images/about/space-bg.jpg');
 	background-size: cover;
-	padding: 3rem 10%;
+	padding: 5rem 10%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .aboutPage__card {
-	background:
-		linear-gradient(var(--dark-magenta) 97%,
-			var(--middle-violet-red) 98%,
-			var(--magenta) 99%);
 	width: 100%;
-	padding: 2rem;
-	border: 4px double var(--black);
+	padding: 5%;
+	background-image: url('../assets/images/menu/menu_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 95% 90%;
+	border: 1px solid #CDCDCD;
 	border-radius: 1.5rem;
+	transition: 1s;
+}
+
+.aboutPage__card:hover {
+	border: 1px solid #09C4BD;
 }
 
 .aboutPage__title {
+	color: #CDCDCD;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 3rem;
-	color: var(--white);
 	text-align: center;
 	text-transform: uppercase;
+	transition: 1s;
 }
 
 .aboutPage__wrapper {
@@ -36,14 +43,19 @@
 }
 
 .aboutPage__text {
+	color: #CDCDCD;
 	width: 55%;
 	font-size: 1.2rem;
-	color: var(--white);
 	text-align: justify;
+	transition: 1s;
 }
 
 .aboutPage__image {
 	width: 43%;
-	border: 4px double var(--black);
 	border-radius: 1rem;
+}
+
+.aboutPage__card:hover .aboutPage__title,
+.aboutPage__card:hover .aboutPage__text {
+	color: #09C4BD;
 }

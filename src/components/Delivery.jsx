@@ -32,8 +32,8 @@ const Delivery = () => {
 				<div className='deliveryPage__deliveryMan1'>
 					<Tilt
 						className='parallax__deliveryMan1'
-						tiltMaxAngleX={20}
-						tiltMaxAngleY={20}
+						tiltMaxAngleX={25}
+						tiltMaxAngleY={25}
 						perspective={1000}
 						transitionSpeed={1500}
 						gyroscope={true}
@@ -44,8 +44,8 @@ const Delivery = () => {
 				<div className='deliveryPage__deliveryMan2'>
 					<Tilt
 						className='parallax__deliveryMan2'
-						tiltMaxAngleX={20}
-						tiltMaxAngleY={20}
+						tiltMaxAngleX={25}
+						tiltMaxAngleY={25}
 						perspective={1000}
 						transitionSpeed={1500}
 						gyroscope={true}

@@ -1,22 +1,56 @@
 /* ========== HEADER STYLE MODULE ========== */
 
-.header {
-	width: 100%;
-	height: 10vh;
+.navigator__button {
+	display: block;
 	position: fixed;
-	top: 0;
-	background-color: var(--footer-bg, #24242424);
-	padding: 0 5%;
+	bottom: 3rem;
+	right: 3.5rem;
+	width: 5rem;
+	height: 5rem;
+	background-color: var(--white, #F0F0F0);
+	border-radius: 50%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	color: var(--black, #212121);
+	font-family: serif;
+	font-size: 8rem;
+	font-weight: 900;
+	line-height: 1;
+	z-index: 1100;
+}
+
+.header {
+	position: fixed;
+	right: 0;
+	width: 70vw;
+	height: 100vh;
+	padding: 20% 5% 40%;
+	background-color: var(--footer-bg, #24242424);
 	backdrop-filter: blur(6px);
 	z-index: 1000;
 }
 
+.open {
+	display: block;
+}
+
+.closed {
+	display: none;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .header__logoText {
 	font-family: 'Rubik Maze', system-ui, Roboto, 'Open Sans', sans-serif;
-	font-size: 3.5rem;
+	font-size: 2rem;
 	line-height: 1;
 	display: flex;
 	align-items: center;
@@ -24,33 +58,82 @@
 }
 
 .header__logoImage {
-	width: 3rem;
+	width: 1.8rem;
+	margin: 0 0.25rem;
 }
 
 .header__navBar {
-	min-width: 60%;
+	height: 70%;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .header__navButton {
-	width: 7rem;
-	height: 2.5rem;
+	width: 100%;
+	height: 3.5rem;
 	color: var(--white, #F0F0F0);
 	background-color: var(--footer-bg, #24242424);
 	border: 0.1rem solid var(--white, #F0F0F0);
 	border-radius: 0.625rem;
-	font-family: 'Orbitron', serif;
 	font-weight: 900;
-	font-size: 1rem;
+	font-size: 2rem;
 	letter-spacing: 0.1rem;
-	transition: 1s;
-	cursor: pointer;
 }
 
-.header__navButton:hover {
-	color: var(--telescopic, #09C4BD);
-	border: 0.1rem solid var(--telescopic, #09C4BD);
+@media screen and (orientation: landscape) {
+	.header {
+		padding: 2% 5%;
+	}
 
+	.header__logoText {
+		font-size: 3.5rem;
+	}
+
+	.header__logoImage {
+		width: 3rem;
+	}
+
+	.header__navBar {
+		height: 80%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.navigator__button {
+		display: none;
+	}
+
+	.header {
+		display: block;
+		width: 100%;
+		height: 10vh;
+		top: 0;
+		padding: 0 5%;
+	}
+
+	.header__wrapper {
+		flex-direction: row;
+	}
+
+	.header__navBar {
+		height: auto;
+		width: 60%;
+		flex-direction: row;
+	}
+
+	.header__navButton {
+		width: 7rem;
+		height: 2.5rem;
+		font-size: 1rem;
+		transition: 1s;
+		cursor: pointer;
+	}
+
+	.header__navButton:hover {
+		color: var(--telescopic, #09C4BD);
+		border: 0.1rem solid var(--telescopic, #09C4BD);
+	}
 }

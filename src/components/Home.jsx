@@ -7,7 +7,7 @@ import planetBg from '../assets/images/home/planet-bg.webp';
 import landscapeBg from '../assets/images/home/landscape-bg.webp';
 import pizza from '../assets/images/home/pizza1.webp';
 import pizzaBox from '../assets/images/home/pizza-box.webp';
-import burger from '../assets/images/menu/alienObserverBurgerImg.webp'
+import burger from '../assets/images/food/alienObserverBurgerImg.webp'
 import '../styles/Home.css';
 import '../styles/AstronautAnimation.css';
 import '../styles/RotateAnimation.css';

@@ -1,7 +1,7 @@
 // ========== HEADER COMPONENT MODULE ========== //
 
 import PropTupes from 'prop-types';
-import moonImage from '../assets/images/header/restaurant-logo.webp';
+import moonImage from '../assets/images/logo/restaurant-logo.webp';
 import '../styles/Header.css';
 
 

@@ -1,24 +1,24 @@
 // ========== MENU DATA MODULE ========== //
 
 import { v4 as uuid4 } from 'uuid';
-import cosmoCowboyPizza from '../assets/images/menu/cosmoCowboyPizzaImg.webp';
-import craterCheesePizza from '../assets/images/menu/craterCheesePizzaImg.webp';
-import radioactivePizza from '../assets/images/menu/radioactivePizzaImg.webp';
-import starryExoticPizza from '../assets/images/menu/starryExoticPizzaImg.webp';
-import galacticColdCutsPizza from '../assets/images/menu/galacticColdCutsPizzaImg.webp';
-import snortingAstronautBurger from '../assets/images/menu/snortingAstronautBurgerImg.webp';
-import cosmicChickenBurger from '../assets/images/menu/cosmicChickenBurgerImg.webp';
-import cheeseWithMushroomsBurger from '../assets/images/menu/cheeseWithMushroomsBurgerImg.webp';
-import galacticFishBurger from '../assets/images/menu/galacticFishBurgerImg.webp';
-import starCatchBurger from '../assets/images/menu/starCatchBurgerImg.webp';
-import alienObserverBurger from '../assets/images/menu/alienObserverBurgerImg.webp';
-import mrsUniverseBurger from '../assets/images/menu/mrsUniverseBurgerImg.webp';
-import alienHeadKebab from '../assets/images/menu/alienHeadKebabImg.webp';
-import acidRollKebab from '../assets/images/menu/acidRollKebabImg.webp';
-import starryPotato from '../assets/images/menu/starryPotatoImg.webp';
-import lunarWater from '../assets/images/menu/lunarWaterImg.webp';
-import meteorJuice from '../assets/images/menu/meteorJuiceImg.webp';
-import beerRocket from '../assets/images/menu/beerRocketImg.webp';
+import cosmoCowboyPizza from '../assets/images/food/cosmoCowboyPizzaImg.webp';
+import craterCheesePizza from '../assets/images/food/craterCheesePizzaImg.webp';
+import radioactivePizza from '../assets/images/food/radioactivePizzaImg.webp';
+import starryExoticPizza from '../assets/images/food/starryExoticPizzaImg.webp';
+import galacticColdCutsPizza from '../assets/images/food/galacticColdCutsPizzaImg.webp';
+import snortingAstronautBurger from '../assets/images/food/snortingAstronautBurgerImg.webp';
+import cosmicChickenBurger from '../assets/images/food/cosmicChickenBurgerImg.webp';
+import cheeseWithMushroomsBurger from '../assets/images/food/cheeseWithMushroomsBurgerImg.webp';
+import galacticFishBurger from '../assets/images/food/galacticFishBurgerImg.webp';
+import starCatchBurger from '../assets/images/food/starCatchBurgerImg.webp';
+import alienObserverBurger from '../assets/images/food/alienObserverBurgerImg.webp';
+import mrsUniverseBurger from '../assets/images/food/mrsUniverseBurgerImg.webp';
+import alienHeadKebab from '../assets/images/food/alienHeadKebabImg.webp';
+import acidRollKebab from '../assets/images/food/acidRollKebabImg.webp';
+import starryPotato from '../assets/images/food/starryPotatoImg.webp';
+import lunarWater from '../assets/images/food/lunarWaterImg.webp';
+import meteorJuice from '../assets/images/food/meteorJuiceImg.webp';
+import beerRocket from '../assets/images/food/beerRocketImg.webp';
 
 
 const MENU_DATA = [

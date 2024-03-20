@@ -1,13 +1,39 @@
 // ========== ABOUT COMPONENT MODULE ========== //
 
+import { useState, useEffect } from 'react';
 import pizzaTiam from '../assets/images/hero/pizza-team.webp';
 import '../styles/About.css';
 
 
 const About = () => {
+	const [aboutCardStyle, setAboutCardStyle] = useState({});
+
+	useEffect(() => {
+		const cardAnimationDelay = setTimeout(() => {
+			setAboutCardStyle({
+				transition: '3s',
+				transitionProperty: 'opacity, width',
+				opacity: '1',
+				width: '100%',
+			});
+		}, 1500);
+
+		const resetCardAnimationDelay = setTimeout(() => {
+			setAboutCardStyle(cardStyle => ({
+				...cardStyle,
+				transition: 'border 1s',
+			}));
+		}, 1500 + 3000);
+
+		return () => {
+			clearTimeout(cardAnimationDelay);
+			clearTimeout(resetCardAnimationDelay);
+		};
+	}, []);
+
 	return (
 		<section className='aboutPage'>
-			<div className='aboutPage__card'>
+			<div className='aboutPage__card' style={aboutCardStyle}>
 				<h1 className='aboutPage__title'>ABOUT</h1>
 				<div className='aboutPage__wrapper'>
 					<p className='aboutPage__text'>

@@ -3,6 +3,7 @@
 .aboutPage {
 	width: 100%;
 	min-height: 100vh;
+	overflow-x: hidden;
 	background-image: url('../assets/images/background/space-bg.jpg');
 	background-size: cover;
 	padding: 5rem 10%;
@@ -12,15 +13,17 @@
 }
 
 .aboutPage__card {
-	width: 100%;
+	width: 0;
 	padding: 5%;
+	margin-left: auto;
 	background-image: url('../assets/images/background/card-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 95% 90%;
 	border: 1px solid var(--white, #F0F0F0);
 	border-radius: 1.5rem;
-	transition: 1s;
+	transition: border 1s;
+	opacity: 0;
 }
 
 .aboutPage__card:hover {
@@ -31,7 +34,7 @@
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: color 1s;
 }
 
 .aboutPage__wrapper {
@@ -44,7 +47,7 @@
 	width: 55%;
 	font-size: 1.2rem;
 	text-align: justify;
-	transition: 1s;
+	transition: color 1s;
 }
 
 .aboutPage__image {

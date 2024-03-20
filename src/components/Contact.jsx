@@ -1,12 +1,38 @@
 // ========== CONTACT COMPONENT MODULE ========== //
 
+import { useState, useEffect } from 'react';
 import '../styles/Contact.css';
 
 
 const Contact = () => {
+	const [contactCardStyle, setContactCardStyle] = useState({});
+
+	useEffect(() => {
+		const cardAnimationDelay = setTimeout(() => {
+			setContactCardStyle({
+				transition: '3s',
+				transitionProperty: 'opacity, width',
+				opacity: '1',
+				width: '100%',
+			});
+		}, 1500);
+
+		const resetCardAnimationDelay = setTimeout(() => {
+			setContactCardStyle(cardStyle => ({
+				...cardStyle,
+				transition: 'border 1s',
+			}));
+		}, 1500 + 3000);
+
+		return () => {
+			clearTimeout(cardAnimationDelay);
+			clearTimeout(resetCardAnimationDelay);
+		};
+	}, []);
+
 	return (
 		<section className="contactPage">
-			<div className="contactPage__card">
+			<div className="contactPage__card" style={contactCardStyle}>
 				<h1 className="contactPage__title">CONTACT</h1>
 				<p className="contactPage__text">
 					<span>Address: </span><br />Sector E-4, Nova-Gastron Planet, Andromeda Galaxy

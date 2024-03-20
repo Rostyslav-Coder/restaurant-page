@@ -1,6 +1,6 @@
 // ========== ABOUT COMPONENT MODULE ========== //
 
-import pizzaTiam from '../assets/images/about/pizza-team.webp';
+import pizzaTiam from '../assets/images/hero/pizza-team.webp';
 import '../styles/About.css';
 
 

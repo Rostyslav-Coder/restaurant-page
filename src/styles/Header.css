@@ -28,7 +28,7 @@
 	padding: 20% 5% 40%;
 	background-color: var(--footer-bg, #24242424);
 	backdrop-filter: blur(6px);
-	z-index: 1000;
+	z-index: 1050;
 }
 
 .open {

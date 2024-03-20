@@ -81,7 +81,7 @@
 	height: 100%;
 	transform-style: preserve-3d;
 	transform: perspective(500px);
-	background-image: url('../assets/images/home/pizza-man1.webp');
+	background-image: url('../assets/images/hero/pizza-man1.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: flex;
@@ -110,7 +110,7 @@
 	height: 100%;
 	transform-style: preserve-3d;
 	transform: perspective(500px);
-	background-image: url('../assets/images/home/pizza-man2.webp');
+	background-image: url('../assets/images/hero/pizza-man2.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: flex;
@@ -139,7 +139,7 @@
 	height: 110%;
 	transform-style: preserve-3d;
 	transform: perspective(500px);
-	background-image: url('../assets/images/home/pizza-man3.webp');
+	background-image: url('../assets/images/hero/pizza-man3.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: flex;

@@ -2,11 +2,11 @@
 
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import Tilt from 'react-parallax-tilt';
-import spaceBg from '../assets/images/home/sky-bg.webp';
-import planetBg from '../assets/images/home/planet-bg.webp';
-import landscapeBg from '../assets/images/home/landscape-bg.webp';
-import pizza from '../assets/images/home/pizza1.webp';
-import pizzaBox from '../assets/images/home/pizza-box.webp';
+import spaceBg from '../assets/images/background/sky-bg.webp';
+import planetBg from '../assets/images/background/planet-bg.webp';
+import landscapeBg from '../assets/images/background/landscape-bg.webp';
+import pizza from '../assets/images/food/pizza1.webp';
+import pizzaBox from '../assets/images/hero/pizza-box.webp';
 import burger from '../assets/images/food/alienObserverBurgerImg.webp'
 import '../styles/Home.css';
 import '../styles/AstronautAnimation.css';

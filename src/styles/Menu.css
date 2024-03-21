@@ -72,12 +72,12 @@
 
 @media screen and (orientation: landscape) {
 	.menuCard {
-		width: 60%;
+		width: 70%;
 		margin: -10vh auto 10vh;
 	}
 
 	.menuCard__image {
-		width: 40%;
+		width: 25%;
 	}
 
 	.menuCard:hover .menuCard__image {
@@ -92,10 +92,6 @@
 
 	.menuCard {
 		margin: 0 auto 10vh;
-	}
-
-	.menuCard__image {
-		width: 25%;
 	}
 
 	.menuCard:hover .menuCard__image {

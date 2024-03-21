@@ -5,7 +5,7 @@
 	background-image: url('../assets/images/background/space-bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 10vh 0;
+	padding: 5vh 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -13,7 +13,6 @@
 }
 
 .menuPage__title {
-	font-family: 'Orbitron', sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -22,8 +21,8 @@
 .menuCard {
 	transform: perspective(800px);
 	transform-style: preserve-3d;
-	width: 60%;
-	margin: 1rem auto;
+	width: 80%;
+	margin: 5rem auto;
 	border: 2px solid var(--white, #F0F0F0);
 	border-radius: 1rem;
 	display: flex;
@@ -52,21 +51,54 @@
 }
 
 .menuCard__image {
-	width: 25%;
+	width: 60%;
 	transition: 1s;
 }
 
 .menuCard:hover .menuCard__image {
-	transform: translateZ(50px) rotate(720deg) scale(2.2);
+	transform: translateZ(50px) rotate(720deg) scale(1.5);
 }
 
 .menuCard__text {
 	width: 80%;
-	text-align: justify;
 	padding: 3% 0 5%;
+	text-align: justify;
 	transition: color 2s;
 }
 
 .menuCard:hover .menuCard__text {
 	color: var(--telescopic, #09C4BD);
+}
+
+@media screen and (orientation: landscape) {
+	.menuCard {
+		width: 60%;
+		margin: -10vh auto 10vh;
+	}
+
+	.menuCard__image {
+		width: 40%;
+	}
+
+	.menuCard:hover .menuCard__image {
+		transform: translateZ(50px) rotate(720deg) scale(1.8);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.menuPage {
+		padding: 10vh 0;
+	}
+
+	.menuCard {
+		margin: 0 auto 10vh;
+	}
+
+	.menuCard__image {
+		width: 25%;
+	}
+
+	.menuCard:hover .menuCard__image {
+		transform: translateZ(50px) rotate(720deg) scale(2.2);
+	}
 }

@@ -5,7 +5,7 @@
 	min-height: 100vh;
 	background-image: url('../assets/images/background/space-bg.jpg');
 	background-size: cover;
-	padding: 5rem 10%;
+	padding: 10vh 10% 15vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -52,4 +52,12 @@
 .contactPage__card:hover .contactPage__title,
 .contactPage__card:hover .contactPage__text {
 	color: var(--telescopic, #09C4BD);
+}
+
+@media screen and (orientation: landscape) {
+	.contactPage {
+		padding: 10vh 10% 22vh;
+	}
+
+	;
 }

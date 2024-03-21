@@ -6,7 +6,7 @@
 	overflow-x: hidden;
 	background-image: url('../assets/images/background/space-bg.jpg');
 	background-size: cover;
-	padding: 5rem 10%;
+	padding: 10vh 10% 15vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,23 +39,45 @@
 
 .aboutPage__wrapper {
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .aboutPage__text {
-	width: 55%;
+	width: 80%;
 	font-size: 1.2rem;
 	text-align: justify;
 	transition: color 1s;
 }
 
 .aboutPage__image {
-	width: 43%;
+	width: 80%;
 	border-radius: 1rem;
+	margin-bottom: 1rem;
 }
 
 .aboutPage__card:hover .aboutPage__title,
 .aboutPage__card:hover .aboutPage__text {
 	color: var(--telescopic, #09C4BD);
+}
+
+@media screen and (orientation: landscape) {
+	.aboutPage {
+		padding: 10vh 10% 22vh;
+	}
+
+	.aboutPage__wrapper {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.aboutPage__text {
+		width: 55%;
+	}
+
+	.aboutPage__image {
+		width: 43%;
+		margin: 0;
+	}
 }

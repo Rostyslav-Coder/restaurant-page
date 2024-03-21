@@ -11,8 +11,7 @@ const About = () => {
 	useEffect(() => {
 		const cardAnimationDelay = setTimeout(() => {
 			setAboutCardStyle({
-				transition: '3s',
-				transitionProperty: 'opacity, width',
+				transition: 'opacity 3s, width 3s',
 				opacity: '1',
 				width: '100%',
 			});

@@ -10,8 +10,7 @@ const Contact = () => {
 	useEffect(() => {
 		const cardAnimationDelay = setTimeout(() => {
 			setContactCardStyle({
-				transition: '3s',
-				transitionProperty: 'opacity, width',
+				transition: 'opacity 3s, width 3s',
 				opacity: '1',
 				width: '100%',
 			});
